@@ -29,22 +29,28 @@ header .head1{
     padding: 0 20px;
   
 }
- .head1 a{
+ .head1 .left button{
     text-decoration: none;
-    width: auto;
-    height: 80px;
+    width: 30px;
+    height: 30px;
     background-color:rgba(23, 23, 23, 0.1);
     color: white;
     border-radius: 50px;
+    
 }
 
+.head1 .left button:hover{
+   background-color: green;
+   cursor: pointer;
+}
 .head1 .right span{
     color: white;
 }
 
-.head1 .right button{
+.head1 .right .call{
     background: rgba(43, 181, 68, 0.793);
     font-weight: 600;
+    cursor: pointer;
 }
 .head2{
     height: 100px;
@@ -204,7 +210,7 @@ main .main.four .para{
     height: 30px;
     margin: auto;
     margin-top: 10px;
-    background-color: blueviolet;
+    /* background-color: blueviolet; */
 }
 
 main .main.four .web .icon{
@@ -288,4 +294,27 @@ footer .footercontactus{
 footer .footercontactus .followlogos,.fo{
     margin-top: 30px;
 
+}
+
+.head2 .why span:hover::before{
+    
+    transform: scaleX(1);
+}
+
+.head2 .why span{
+    position: relative;
+    cursor: pointer;
+}
+
+.head2 .why span::before{
+    content: "";
+    height: 10px;
+    width: 100%;
+    /* background-color: orange; */
+    position: absolute;
+    top: 45px;
+    left: 0;
+    transform: scaleX(0);
+    transition: 0.25s ease-in;
+    border-bottom: 5px solid orange;
 }
