@@ -1,0 +1,291 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    background-color: bisque;
+}
+
+header{
+    height: auto;
+    width: 100%;
+  
+    display: flex;
+    flex-direction: column;
+}
+
+header .head1{
+    height: 50px;
+    background-color: rgba(0, 0, 0,0.9);
+    display: flex;
+    justify-content: space-between;
+    word-spacing: 10px;
+    align-items: center;
+    padding: 0 20px;
+  
+}
+ .head1 a{
+    text-decoration: none;
+    width: auto;
+    height: 80px;
+    background-color:rgba(23, 23, 23, 0.1);
+    color: white;
+    border-radius: 50px;
+}
+
+.head1 .right span{
+    color: white;
+}
+
+.head1 .right button{
+    background: rgba(43, 181, 68, 0.793);
+    font-weight: 600;
+}
+.head2{
+    height: 100px;
+    background-color: white;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+.head2 .bran{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.head2 .bran h1{
+    font-size: 40px;
+}
+.head2 .bran span{
+    background-color: green;
+    font-size: 12px;
+    height: 30px;
+    width: 100px;
+    padding:1px 10px;
+    display: block;
+    margin-left: 8px;
+}
+.head2 .why span{
+   
+    margin-right: 20px;
+    position: relative;
+    font-weight: 600;
+}
+
+
+main .main.one,.main.two,.main.three,.main.four{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main .main.one .we{
+   font-size: 70px;
+   text-transform: uppercase;
+   color: white;
+}
+main .main.one .wepara{
+    width: 60%;
+    height: 30px;
+    text-align: center;
+    margin-top: 30px;
+    color: white;
+}
+
+main .main.one button,.main.three button{
+    margin-top: 50px;
+    width: 200px;
+    height: 40px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    background-color: orange;
+    border: none;
+    border-radius: 2px;
+}
+
+
+main .main.two .pic{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: hsl(0, 0%, 95%);
+    padding: 26px;
+    margin-left: 50px;
+    margin-bottom: 20px;
+    
+}
+
+main .main.two h1{
+    font-size: 45px;
+    color: black;
+    margin-bottom: 20px;
+
+}
+
+main .main.two h1 span{
+    color: rgba(43, 181, 68, 0.793);
+}
+main .main.two .item h4{
+    margin-bottom: 10px;
+}
+
+main .main.two .item p{
+    color: hsl(0, 0%, 80%);
+}
+
+main .main.two .pic .fa-lightbulb,.fa-thumbs-up,.fa-clock,.fa-people-roof,.fa-message{
+    font-size: 50px;
+}
+
+main .main.two .item{
+    text-align: center;
+    /* background-color: brown; */
+    height: 200px;
+    width: 200px;
+}
+main .main.two .items,.webs{
+    display: flex;
+}
+
+main .main.two .items{
+    display: flex;
+    gap:10px;
+    margin-top: 30px;
+}
+
+
+main .main.three h1{
+   font-size: 60px;
+   color: white;
+}
+main .main.three input,button{
+    height: 40px;
+    width: 180px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    margin-left: 10px;
+}   
+
+main .main.three input::placeholder{
+    padding-left: 10px;
+}
+main .main.three p{
+    width: 50%;
+    text-align: center;
+    color: white;
+}
+main .webs .web{
+    width: 300px;
+    height: 180px;
+    background-color: lightgray;
+    margin-right: 20px;
+    position: relative;
+    padding:  50px 30px;
+    text-align: center;
+    top: -20px;
+}
+
+main .main.four h1{
+    font-size: 40px;
+    margin-bottom: 0px;
+    margin-top: 30px;
+}
+
+main .main.four .para{
+    width: 820px;
+    height: 30px;
+    margin: auto;
+    margin-top: 10px;
+    background-color: blueviolet;
+}
+
+main .main.four .web .icon{
+    background-color: gold;
+    border-radius: 50%;
+    padding: 23px;
+    height: 80px;
+    width: 80px;
+    margin-bottom: 50px;
+    position: absolute;
+    top: -40px;
+    left:110px
+}
+
+main .main.four .icon .fa-star{
+    font-size: 2rem;
+}
+
+main .main.one,.main.three,footer{
+    background-color:rgba(43, 181, 68, 0.793) ;
+    height: 400px;
+    width: 100%;
+}
+
+main .main.two,.main.four{
+    background-color: white;
+    height: 400px;
+    width: 100%;
+}
+
+footer{
+    display: flex;
+    background-color: rgba(43, 181, 68, 0.793);
+    padding: 100px 200px ;
+}
+
+footer .footer.bran{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .footer.bran  h1{
+    font-size: 40px;
+    margin-right: 5px;
+}
+
+footer .brand p{
+ width: 200px;
+ font-size: 0.75em;
+ margin-top: 20px;
+ margin-bottom: 50px;
+}
+
+footer .brand .footer.bran  span{
+  background-color: orange;
+  color: white;
+  width: 100px;
+  height: 30px;
+  font-size: 0.8em;
+  display: block;
+  padding: 0px 20px;
+}
+
+footer .footerlinks .links,.usefullinks .links{
+  display: flex;
+  flex-direction: column;
+  margin-right: 50px;
+}
+
+footer .footerlinks,.usefullinks{
+    border-right: 2px solid gray;
+    margin-left: 50px;
+}
+
+footer .footercontactus{
+    margin-left: 50px;
+
+}
+
+footer .footercontactus .followlogos,.fo{
+    margin-top: 30px;
+
+}
